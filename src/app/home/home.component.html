@@ -1,0 +1,27 @@
+<table>
+  <tr>
+    <th *ngFor="let element of tdHeaders">{{element}}</th>
+  </tr>
+
+  <tr *ngFor="let user of users" (click) = loadAllData(user)>
+    <td>
+      {{ user.login }}
+    </td>
+    <td>
+      {{user.id}}
+
+    </td>
+  <td>
+    {{user.node_id}}
+  </td>
+  <td>
+    {{user.avatar_url}}
+  </td>
+
+  <td>
+    {{gravatar_id}}
+  </td>
+
+  </tr>
+</table>
+
